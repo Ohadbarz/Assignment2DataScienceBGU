@@ -209,7 +209,7 @@ clusterDigits, label = assignClusters(returnedCenters, y_test)
 
 #########(f)##########
 percentage = checkSuccess(label, clusterDigits)
-# print(percentage)
+print(percentage)
 
 #########(g)##########
 pics, Up = PCA(20, x_test)
@@ -218,7 +218,7 @@ for i in range(3):
     clusters, centers, returnedCenters = KMeans(10, pics, centers)
     clusterDigits, label = assignClusters(returnedCenters, y_train)
     percentage = checkSuccess(label, clusterDigits)
-    # print(percentage)
+    print(percentage)
 
 #########(h)##########
 pics, Up = PCA(12, x_test)
@@ -226,7 +226,7 @@ centers = (np.random.random((10, 20)) - 0.5)
 clusters, centers, returnedCenters = KMeans(10, pics, centers)
 clusterDigits, label = assignClusters(returnedCenters, y_train)
 percentage = checkSuccess(label, clusterDigits)
-# print(percentage)
+print(percentage)
 
 #########(i)##########
 pics, Up = PCA(20, x_test)
@@ -243,4 +243,4 @@ for i in range(10):
 clusters, centers, returnedCenters = KMeans(10, pics, centers)
 clusterDigits, label = assignClusters(returnedCenters, y_train)
 percentage = checkSuccess(label, clusterDigits)
-# print(percentage)
+print(percentage)
